@@ -1,4 +1,4 @@
-# expo-alarm-module
+# expo-alarms
 > This is not an official Expo SDK package.
 Alarm library to use with expo bare workflow.
 Tested in versions 0.64 to 0.73 of RN.
@@ -7,13 +7,13 @@ Tested in versions 0.64 to 0.73 of RN.
 ### NPM
 
 ```
-npm install expo-alarm-module
+npm install expo-alarms
 ```
 
 ### Yarn
 
 ```
-yarn add expo-alarm-module
+yarn add expo-alarms
 ```
 
 **NOTE: For Android, you will still have to manually update the AndroidManifest.xml (as below) in order to use Scheduled Notifications.**
@@ -72,12 +72,12 @@ In your info.plist, you need to add background mode for sound and remote notific
 You also need to obtain permissions for notifications beforehand (the library asks permission when setting the notification for the first time, but if you get permission before it is better).
 
 ## Expo Installation
-Since this library has a config plugin for expo, you only need to install it with expo install expo-alarm-module for it to work and add the [config plugin](https://docs.expo.io/guides/config-plugins/) to the [`plugins`](https://docs.expo.io/versions/latest/config/app/#plugins) array of your `app.json` or `app.config.js`:
+Since this library has a config plugin for expo, you only need to install it with expo install expo-alarms for it to work and add the [config plugin](https://docs.expo.io/guides/config-plugins/) to the [`plugins`](https://docs.expo.io/versions/latest/config/app/#plugins) array of your `app.json` or `app.config.js`:
 
 ```json
 {
   "expo": {
-    "plugins": ["expo-alarm-module"]
+    "plugins": ["expo-alarms"]
   }
 }
 ```
@@ -96,7 +96,7 @@ Don't forget to run "pod install" in the example/ios folder for configuring the 
 import React, { useEffect } from 'react';
 import { View, Text, Button } from 'react-native';
 
-import AlarmModule, { removeAlarm, scheduleAlarm, stopAlarm } from "expo-alarm-module";
+import AlarmModule, { removeAlarm, scheduleAlarm, stopAlarm } from "expo-alarms";
 
 const App = () => {
     const alarmIn60 = () => {
