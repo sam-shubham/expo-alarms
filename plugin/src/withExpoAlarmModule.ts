@@ -1,6 +1,6 @@
 import { AndroidConfig, type ConfigPlugin, createRunOncePlugin, withInfoPlist } from '@expo/config-plugins';
 
-const pkg = require('expo-alarm-module/package.json');
+const pkg = require('expo-alarms/package.json');
 
 const withIosPermissions: ConfigPlugin = (configProp) => {
   return withInfoPlist(configProp, (config) => {
