@@ -1,5 +1,5 @@
 {
-  "name": "expo-alarm-module",
+  "name": "expo-alarms",
   "version": "1.2.0",
   "description": "Provides an alarm module for expo (tested with version 0.64 to 0.73 of RN).",
   "main": "lib/commonjs/index",
@@ -29,7 +29,7 @@
     "!**/node_modules"
   ],
   "scripts": {
-    "example": "yarn workspace expo-alarm-module-example",
+    "example": "yarn workspace expo-alarms-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -44,14 +44,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nidilap/expo-alarm-module.git"
+    "url": "git+https://github.com/sam-shubham/expo-alarms.git"
   },
-  "author": "Nidilap <nidilap11@hotmail.com> (https://github.com/Nidilap)",
+  "author": "sam-shubham <mrshubhamsamrat05@gmail.com> (https://github.com/sam-shubham)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Nidilap/expo-alarm-module/issues"
+    "url": "https://github.com/sam-shubham/expo-alarms/issues"
   },
-  "homepage": "https://github.com/Nidilap/expo-alarm-module#readme",
+  "homepage": "https://github.com/sam-shubham/expo-alarms#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
