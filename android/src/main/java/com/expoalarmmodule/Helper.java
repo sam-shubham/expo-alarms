@@ -156,12 +156,11 @@ public class Helper {
                 .setPriority(NotificationCompat.PRIORITY_MAX)
                 .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
                 .setCategory(NotificationCompat.CATEGORY_ALARM)
-                .setAutoCancel(true)
+                .setAutoCancel(false)
                 .setOngoing(true)
                 .setSound(null)
                 .setVibrate(null)
-                .setContentIntent(createOnClickedIntent(context, alarmUid, id))
-                .setDeleteIntent(pendingIntentDismiss);
+                .setContentIntent(createOnClickedIntent(context, alarmUid, id));
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             // PendingIntent fullScreenIntent = createOnClickedIntent(context, alarmUid,
